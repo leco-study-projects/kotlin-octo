@@ -2,9 +2,9 @@ package com.leco.kotlinocto.resources.request
 
 import com.fasterxml.jackson.annotation.JsonProperty
 
-class EventsRequest {
+class EventRequest {
     @JsonProperty("issue")
-    var issueRequest: Issue? = null
+    var issueRequest: IssueRequest? = null
 
     @JsonProperty("action")
     var action: String? = null

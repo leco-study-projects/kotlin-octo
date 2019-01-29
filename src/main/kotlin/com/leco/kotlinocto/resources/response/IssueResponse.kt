@@ -31,7 +31,7 @@ class IssueResponse {
     var state: String? = null
 
     @JsonProperty("user")
-    var user: User? = null
+    var user: UserResponse? = null
 
     @JsonProperty("node_id")
     var nodeId: String? = null

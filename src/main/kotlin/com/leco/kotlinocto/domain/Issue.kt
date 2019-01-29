@@ -1,12 +1,14 @@
 package com.leco.kotlinocto.resources.request
 
+import java.util.*
 import javax.persistence.*
 
 @Entity
 class Issue {
 
     @Id
-    var id: Int? = null
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    var id: UUID? = null
 
     var comments: Int? = null
 
@@ -42,7 +44,7 @@ class Issue {
     @JoinColumn(name = "event_id")
     var event: Event? = null
 
-    @OneToOne(mappedBy = "issue")
+    @OneToOne(mappedBy = "issue", cascade = [CascadeType.ALL])
     var user: User? = null
 
     var nodeId: String? = null

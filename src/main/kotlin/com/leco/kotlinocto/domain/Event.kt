@@ -1,16 +1,16 @@
 package com.leco.kotlinocto.resources.request
 
-import javax.persistence.Entity
-import javax.persistence.Id
-import javax.persistence.OneToOne
+import java.util.*
+import javax.persistence.*
 
 @Entity
 class Event {
 
     @Id
-    var id: Int? = null
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    var id: UUID? = null
 
-    @OneToOne(mappedBy = "event")
+    @OneToOne(mappedBy = "event", cascade = [CascadeType.ALL])
     var issue: Issue? = null
 
     var action: String? = null

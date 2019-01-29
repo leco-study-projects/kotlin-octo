@@ -1,15 +1,14 @@
 package com.leco.kotlinocto.resources.request
 
-import com.fasterxml.jackson.annotation.JsonProperty
-import javax.persistence.Entity
-import javax.persistence.Id
-import javax.persistence.JoinColumn
-import javax.persistence.OneToOne
+import java.util.*
+import javax.persistence.*
 
 @Entity
+@Table(name = "contributor")
 class User {
     @Id
-    var id: Int? = null
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: UUID? = null
 
     @OneToOne
     @JoinColumn(name = "issue_id")

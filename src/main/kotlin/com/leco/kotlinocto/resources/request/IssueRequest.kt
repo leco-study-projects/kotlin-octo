@@ -49,7 +49,7 @@ class IssueRequest {
     var state: String? = null
 
     @JsonProperty("user")
-    var userRequest: User? = null
+    var userRequest: UserRequest? = null
 
     @JsonProperty("node_id")
     var nodeId: String? = null
