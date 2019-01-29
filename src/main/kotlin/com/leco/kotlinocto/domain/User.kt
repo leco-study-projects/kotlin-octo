@@ -7,7 +7,7 @@ import javax.persistence.*
 @Table(name = "contributor")
 class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     var id: UUID? = null
 
     @OneToOne

@@ -32,6 +32,8 @@ class IssueToResponse : Converter<Issue, IssueResponse> {
         issue.state = source.state
         issue.user = userToResponse.convert(source = source.user!!)
         issue.nodeId = source.nodeId
+        issue.id = source.id.toString()
+
 
         return issue
     }

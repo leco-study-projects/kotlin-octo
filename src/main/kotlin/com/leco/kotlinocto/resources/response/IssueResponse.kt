@@ -37,5 +37,5 @@ class IssueResponse {
     var nodeId: String? = null
 
     @JsonProperty("id")
-    var id: Int? = null
+    var id: String? = null
 }

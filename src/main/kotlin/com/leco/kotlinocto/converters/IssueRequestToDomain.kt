@@ -37,6 +37,7 @@ class IssueRequestToDomain : Converter<IssueRequest, Issue> {
         issue.state = source.state
         issue.user = userRequestRequestToDomain.convert(source.userRequest!!)
         issue.nodeId = source.nodeId
+        issue.user?.issue = issue
 
         return issue
     }
