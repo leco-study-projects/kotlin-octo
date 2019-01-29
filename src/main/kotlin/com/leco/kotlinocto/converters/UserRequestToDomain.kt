@@ -1,6 +1,6 @@
 package com.leco.kotlinocto.converters
 
-import com.leco.kotlinocto.resources.request.User
+import com.leco.kotlinocto.domain.User
 import com.leco.kotlinocto.resources.request.UserRequest
 import org.springframework.core.convert.converter.Converter
 import org.springframework.stereotype.Component

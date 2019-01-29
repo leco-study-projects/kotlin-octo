@@ -1,4 +1,4 @@
-package com.leco.kotlinocto.resources.request
+package com.leco.kotlinocto.domain
 
 import java.util.*
 import javax.persistence.*

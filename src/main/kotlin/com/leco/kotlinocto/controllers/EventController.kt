@@ -1,16 +1,15 @@
-package com.leco.kotlinocto.resources
+package com.leco.kotlinocto.controllers
 
 import com.leco.kotlinocto.services.contracts.EventService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
-import java.util.*
 
-@RestController
-@RequestMapping("/event")
-class EventResource {
+@Controller("")
+@RequestMapping("/")
+class EventController {
 
     val eventService: EventService
 
@@ -19,6 +18,9 @@ class EventResource {
         this.eventService = eventService
     }
 
-    @GetMapping("/action/{action}")
-    fun findByAction(@PathVariable action: String) = eventService.findByAction(action)
+    @GetMapping
+    fun index(model: Model): String {
+        model.addAttribute("events", eventService.findAll())
+        return "index"
+    }
 }

@@ -1,10 +1,10 @@
-package com.leco.kotlinocto.resources.request
+package com.leco.kotlinocto.domain
 
 import java.util.*
 import javax.persistence.*
 
 @Entity
-class Event {
+public class Event {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

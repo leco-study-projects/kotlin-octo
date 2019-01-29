@@ -3,9 +3,9 @@ package com.leco.kotlinocto.services.implementation
 import com.leco.kotlinocto.converters.IssueRequestToDomain
 import com.leco.kotlinocto.converters.IssueToResponse
 import com.leco.kotlinocto.repositories.IssueRepository
-import com.leco.kotlinocto.repositories.IssueService
 import com.leco.kotlinocto.resources.request.IssueRequest
-import com.leco.kotlinocto.resources.request.IssueResponse
+import com.leco.kotlinocto.resources.response.IssueResponse
+import com.leco.kotlinocto.services.contracts.IssueService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import java.util.*

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title>Events</title>
+</head>
+<body>
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Event</th>
+            <th scope="col">Event Action</th>
+            <th scope="col">Issue Number</th>
+            <th scope="col">Issue Title</th>
+            <th scope="col">Avatar</th>
+            <th scope="col">Login</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="event: ${events}">
+                <td th:text="${event.id}"></td>
+                <td th:text="${event.action}"></td>
+                <td th:text="${event.issue.number}"></td>
+                <td th:text="${event.issue.title}"></td>
+                <td><img style="width: 5%" th:src="${event.issue.user.avatarUrl}"></td>
+                <td th:text="${event.issue.user.login}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -3,9 +3,9 @@ package com.leco.kotlinocto.services.implementation
 import com.leco.kotlinocto.converters.UserRequestToDomain
 import com.leco.kotlinocto.converters.UserToResponse
 import com.leco.kotlinocto.repositories.UserRepository
-import com.leco.kotlinocto.repositories.UserService
 import com.leco.kotlinocto.resources.request.UserRequest
-import com.leco.kotlinocto.resources.request.UserResponse
+import com.leco.kotlinocto.resources.response.UserResponse
+import com.leco.kotlinocto.services.contracts.UserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import java.util.*

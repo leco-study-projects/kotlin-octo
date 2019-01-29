@@ -1,12 +1,9 @@
-package com.leco.kotlinocto.repositories
+package com.leco.kotlinocto.services.contracts
 
-import com.leco.kotlinocto.resources.request.Event
 import com.leco.kotlinocto.resources.request.EventRequest
-import com.leco.kotlinocto.resources.request.EventsResponse
-import com.leco.kotlinocto.services.contracts.CrudService
-import org.springframework.data.jpa.repository.JpaRepository
+import com.leco.kotlinocto.resources.response.EventResponse
 
-interface EventService : CrudService<EventRequest, EventsResponse> {
+interface EventService : CrudService<EventRequest, EventResponse> {
 
-    fun findByAction(action: String): List<EventsResponse?>
+    fun findByAction(action: String): List<EventResponse?>
 }

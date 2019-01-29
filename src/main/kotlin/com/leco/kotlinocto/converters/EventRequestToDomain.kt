@@ -1,6 +1,6 @@
 package com.leco.kotlinocto.converters
 
-import com.leco.kotlinocto.resources.request.Event
+import com.leco.kotlinocto.domain.Event
 import com.leco.kotlinocto.resources.request.EventRequest
 import org.springframework.beans.factory.annotation.Autowired
 

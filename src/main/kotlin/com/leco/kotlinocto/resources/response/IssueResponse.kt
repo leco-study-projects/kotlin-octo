@@ -1,4 +1,4 @@
-package com.leco.kotlinocto.resources.request
+package com.leco.kotlinocto.resources.response
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

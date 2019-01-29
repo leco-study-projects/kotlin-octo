@@ -1,8 +1,7 @@
 package com.leco.kotlinocto.converters
 
-import com.leco.kotlinocto.resources.request.Issue
-import com.leco.kotlinocto.resources.request.IssueRequest
-import com.leco.kotlinocto.resources.request.IssueResponse
+import com.leco.kotlinocto.domain.Issue
+import com.leco.kotlinocto.resources.response.IssueResponse
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.convert.converter.Converter
 import org.springframework.stereotype.Component

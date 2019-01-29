@@ -1,7 +1,7 @@
 package com.leco.kotlinocto.resources
 
-import com.leco.kotlinocto.repositories.IssueService
-import com.leco.kotlinocto.resources.request.IssueResponse
+import com.leco.kotlinocto.resources.response.IssueResponse
+import com.leco.kotlinocto.services.contracts.IssueService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

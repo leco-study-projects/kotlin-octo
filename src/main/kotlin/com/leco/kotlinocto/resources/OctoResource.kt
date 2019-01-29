@@ -1,7 +1,7 @@
 package com.leco.kotlinocto.resources
 
-import com.leco.kotlinocto.repositories.EventService
 import com.leco.kotlinocto.resources.request.EventRequest
+import com.leco.kotlinocto.services.contracts.EventService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
