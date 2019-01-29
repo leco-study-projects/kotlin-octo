@@ -24,7 +24,6 @@ apply plugin: 'io.spring.dependency-management'
 group = 'com.leco'
 version = '0.0.1-SNAPSHOT'
 
-
 sourceCompatibility = '1.8'
 
 repositories {
@@ -37,10 +36,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
-//	implementation 'org.flywaydb:flyway-core'
+    implementation 'org.flywaydb:flyway-core'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
-    compile "io.springfox:springfox-swagger2:${swaggerVersion}" 
+    compile "io.springfox:springfox-swagger2:${swaggerVersion}"
     compile "io.springfox:springfox-swagger-ui:${swaggerVersion}"
 
     implementation "org.jetbrains.kotlin:kotlin-reflect"
